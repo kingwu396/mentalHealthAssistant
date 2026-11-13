@@ -8,10 +8,10 @@ FRONTEND_DIR := $(PROJECT_DIR)frontend
 dev: frontend
 
 frontend:
-	npm --prefix "$(FRONTEND_DIR)" run dev
+	pnpm --dir "$(FRONTEND_DIR)" run dev
 
 install:
-	npm --prefix "$(FRONTEND_DIR)" install
+	pnpm --dir "$(FRONTEND_DIR)" install
 
 build:
-	npm --prefix "$(FRONTEND_DIR)" run build
+	pnpm --dir "$(FRONTEND_DIR)" run build
